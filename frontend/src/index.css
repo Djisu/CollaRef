@@ -10,6 +10,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#root {
+  height: 100%;
+}
 
 /* Layout */
 .grid-container {
@@ -51,14 +54,23 @@ a:hover {
   color: #ff8000;
 }
 /* Header */
-header a {
+header {
   color: #ffffff;
   padding: 1rem;
+}
+header a {
+  color: white;
+}
+header a:hover {
+  color: orange;
 }
 a.brand {
   color: #ffffff;
   font-size: 3rem;
   font-weight: bold;
+}
+ul li{
+  text-decoration:none;
 }
 .row {
   display: flex;
@@ -77,7 +89,10 @@ img.medium {
   max-width: 29rem;
   width: 100%;
 }
-
+img.large {
+  max-width: 60rem;
+  width: 100%;
+}
 /* Card */
 .card {
   border: 0.1rem #c0c0c0 solid;
